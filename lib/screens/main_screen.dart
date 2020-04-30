@@ -75,8 +75,12 @@ class _MainScreenState extends State<MainScreen> {
               ),
               onPressed: () async{
                 var coronaData = await CoronaUpdate().getCoronaData();
-                updateUiIndia(coronaData);
-                updateUiWorld(coronaData);
+                setState(() {
+
+                  updateUiIndia(coronaData);
+                  updateUiWorld(coronaData);
+                });
+
 
               },
             )

@@ -1,4 +1,4 @@
-# covoid19
+# covid19
 
 A new Flutter application.
 
